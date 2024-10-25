@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #D1D5DB;
+}
+
+.nav-icons i {
+    margin-left: 20px;
+    color: #D1D5DB;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #111;
+}
+
+.hero-text h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #D1D5DB;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #E5E7EB;
+    margin: 20px 0;
+}
+
+.price {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.current-price {
+    color: #E5E7EB;
+    margin-right: 10px;
+}
+
+.original-price {
+    color: #6B7280;
+    text-decoration: line-through;
+}
+
+.shop-btn {
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.featured-products {
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #E5E7EB;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    max-width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.price .current-price {
+    color: #fff;
+}
+
+.price .original-price {
+    color: #6B7280;
+    text-decoration: line-through;
+}
+
+/* Add styles for responsive design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        margin-bottom: 40px;
+    }
+}
